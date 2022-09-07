@@ -11,6 +11,14 @@
     }); 
     */
 
+
+    $(`<a style="margin-left: 12px;" target="_blank" href="https://18401collinsavenue.com/"><img style="display:block" loading='lazy' width="18" class='lang-icon' src='<?php echo get_template_directory_uri(); ?>/images/en-flag.png' alt='English' ></a>`)
+        .insertBefore(".ip-header-top .ip-contact-email");
+
+
+
+
+
     $(".ip-section-home .ibc-c-button, #ip-section-text-xfzaiedd7 .ibc-c-button").click(function(e) {
         // $(".js-modal-tripwire").addClass('show').show();
         $('<div class="bs-modal-backdrop fade show"></div>').appendTo($('.js-modal-tripwire'));
