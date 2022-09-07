@@ -207,11 +207,11 @@
     <div class="modal_small">
         <button class="modal_small_close">x</button>
 
-        <h3>Choose in which environment you want to do the 3D tour</h3>
+        <h3>Elige en qué entorno quieres hacer el tour 3D</h3>
 
         <div class="cbtns">
-            <a target="_blank" href="https://show.original3d.com/tbr_west_b/">Virtual Tour West</a>
-            <a target="_blank" href="https://show.original3d.com/tbr_east_b/">Virtual Tour East</a>
+            <a target="_blank" href="https://show.original3d.com/tbr_west_b/">Tour Virtual Este</a>
+            <a target="_blank" href="https://show.original3d.com/tbr_east_b/">Tour Virtual Oeste</a>
         </div>
     </div>
 </div>
@@ -228,12 +228,12 @@
     });
     */
 
-    // 		$('#inquire input[name="ib_tags"]').val('Virtual_Tour_requested') 
+    // 		$('#ip-form-1211 input[name="ib_tags"]').val('Virtual_Tour_requested') 
 
-    $('#inquire').submit(function() {
-        var $fieldComments = $('#inquire textarea')
+    $('#ip-form-1211').submit(function() {
+        var $fieldComments = $('#ip-form-1211 textarea')
         var comments = $fieldComments.val()
-        var formTag = $('#inquire input[name="ib_tags"]').val()
+        var formTag = $('#ip-form-1211 input[name="ib_tags"]').val()
         var additionalComments = 'Virtual Tour requested, ' + formTag
         if (comments) {
             comments = comments + '...' + additionalComments
@@ -255,13 +255,13 @@
 <div class="virtual_modal">
     <div class="btns">
         <button class="opt1 active">
-            Virtual Tour West
+            Tour Virtual Este
         </button>
         <button class="opt2">
-            Virtual Tour East
+            Tour Virtual Oeste
         </button>
         <button class="virtual_close">
-            <span>Close</span>
+            <span>Cerrar</span>
         </button>
     </div>
     <iframe src="https://show.original3d.com/tbr_west_b/" class="virtualTour" height="800" width="1280" frameborder="0"
@@ -302,13 +302,13 @@
     });
 
 
-    // 		$('#inquire input[name="ib_tags"]').val('Virtual_Tour_requested') 
+    // 		$('#ip-form-1211 input[name="ib_tags"]').val('Virtual_Tour_requested') 
 
-    $('#inquire').submit(function() {
+    $('#ip-form-1211').submit(function() {
 
-        var $fieldComments = $('#inquire textarea')
+        var $fieldComments = $('#ip-form-1211 textarea')
         var comments = $fieldComments.val()
-        var formTag = $('#inquire input[name="ib_tags"]').val()
+        var formTag = $('#ip-form-1211 input[name="ib_tags"]').val()
         var additionalComments = 'Virtual Tour requested, ' + formTag
 
         if (comments) {
