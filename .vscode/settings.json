@@ -1,0 +1,12 @@
+// .vscode/settings.json
+{
+  "liveSassCompile.settings.includeItems": [
+    "/wp-content/themes/builder-cms/css/lg.scss"
+  ],
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css"
+    }
+  ]
+}
