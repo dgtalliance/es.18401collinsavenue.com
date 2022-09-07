@@ -12,7 +12,7 @@
     */
 
 
-    $(`<a style="margin-left: 12px;" target="_blank" href="https://18401collinsavenue.com/"><img style="display:block; width:18px;" loading='lazy' width="18" class='lang-icon' src='<?php echo get_template_directory_uri(); ?>/images/en-flag.png' alt='English' title="English Version" ></a>`)
+    $(`<a style="margin-left: 12px; margin-right: 12px" target="_blank" href="https://18401collinsavenue.com/"><img style="display:block; width:18px;" loading='lazy' width="18" class='lang-icon' src='<?php echo get_template_directory_uri(); ?>/images/en-flag.png' alt='English' title="English Version" ></a>`)
         .insertBefore(".ip-header-top .ip-contact-email");
 
 
