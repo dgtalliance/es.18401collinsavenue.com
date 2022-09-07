@@ -329,3 +329,32 @@
 })(jQuery);
 </script>
 <?php endif; ?>
+
+
+
+
+<script>
+(function($) {
+    //RECUPERANDO ID DE FORMA GLOBAL
+    var tagNameInquireForm = $("#ip-form-1211").find("input[name='ib_tags']").val();
+    var tagNameVirtualForm = $("#test").find("input[name='ib_tags']").val();
+    console.log(tagNameInquireForm + "/" + tagNameVirtualForm);
+
+    $(document).on("change", ".ip-form-wrap input[type=radio]", function() {
+        //Recuperamos el valor del checkbox
+        var tagName = $(this).parents("form").find("input[name='ib_tags']").val("");
+        var formId = $(this).parents("form").attr("id");
+        switch (formId) {
+            case 'ip-form-1211':
+                $(this).parents("form").find("input[name='ib_tags']").val(tagNameInquireForm + "," + this
+                    .value);
+                break;
+
+            case 'test':
+                $(this).parents("form").find("input[name='ib_tags']").val(tagNameVirtualForm + "," + this
+                    .value);
+                break;
+        }
+    });
+})(jQuery);
+</script>
