@@ -337,7 +337,7 @@
 (function($) {
     //RECUPERANDO ID DE FORMA GLOBAL
     var tagNameInquireForm = $("#ip-form-1211").find("input[name='ib_tags']").val();
-    var tagNameVirtualForm = $("#test").find("input[name='ib_tags']").val();
+    var tagNameVirtualForm = $("#ip-form-1212").find("input[name='ib_tags']").val();
     console.log(tagNameInquireForm + "/" + tagNameVirtualForm);
 
     $(document).on("change", ".ip-form-wrap input[type=radio]", function() {
@@ -350,7 +350,7 @@
                     .value);
                 break;
 
-            case 'test':
+            case 'ip-form-1212':
                 $(this).parents("form").find("input[name='ib_tags']").val(tagNameVirtualForm + "," + this
                     .value);
                 break;
