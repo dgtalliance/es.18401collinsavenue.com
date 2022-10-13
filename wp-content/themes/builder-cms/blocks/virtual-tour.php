@@ -356,5 +356,8 @@
                 break;
         }
     });
+
+
+    $(".ip-form-check-input").prop('required', true);
 })(jQuery);
 </script>
